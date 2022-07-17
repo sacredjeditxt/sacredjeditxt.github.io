@@ -1,0 +1,29 @@
+:root {
+    --dark: #1f1908;
+    --light: #ffc71f;
+    --lightouter: #ffc000;
+    --null: #00000000;
+}
+@font-face {
+    font-family: 'Protobesh AF';
+    src: url(ProtobeshAF.otf);
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--null);
+    text-shadow: 0 0 5px var(--lightouter), 0 0 1px var(--light);
+    margin: 3em auto;
+}
+
+p {
+    margin: 24pt auto;
+    width: 750pt;
+    font-size: 24pt;
+    font-family: 'Protobesh AF';
+}
+
+p:hover {
+    letter-spacing: 3pt;
+    font-family: 'Courier New', Courier, monospace;
+}
