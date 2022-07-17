@@ -23,7 +23,7 @@ p {
     font-family: 'Protobesh AF';
 }
 
-p:hover {
+p:active:hover {
     letter-spacing: 3pt;
     font-family: 'Courier New', Courier, monospace;
 }
