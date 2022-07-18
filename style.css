@@ -25,5 +25,6 @@ p {
 
 p:active:hover {
     letter-spacing: 3pt;
+    line-height: 1.25em;
     font-family: 'Courier New', Courier, monospace;
 }
