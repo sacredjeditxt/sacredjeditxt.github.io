@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>kyber crystal</h1>
     <p>The brightest stars have hearts of Kyber. They breathe out life in abundance. They guide safely the lost navigator. They are true exemplars of the Jedi.</p>
     <p>The Force flows through Kyber as it does through all living things. The Kyber is attuned to the living Force. Can sense its presence. Can focus its energy.</p>
     <p>From ancient times the Jedi have been drawn to Kyber crystals. The first fragments were found on riverbanks and within meteorite craters.</p>
@@ -32,5 +33,12 @@
     <p>C Three. The Rite of the Forge.</p>
     <p>In times past lightsabers were forged for the Jedi by dedicated sabersmiths using crystals obtained from across the galaxy.</p>
     <p>After a terrible siege on Tython rendered the Old Forge unusable the knowledge of saber construction was passed to all Jedi lest it be lost forever.</p>
+    <script> 
+        let paragraphs = document.getElementsByTagName('p');
+        for (let p = 0; p < paragraphs.length; p++) {
+                let text = paragraphs[p].innerHTML;
+                paragraphs[p].innerHTML = `${text}<span aria-hidden="true">${text}</span>`;
+        }
+    </script> 
 </body>
 </html>
