@@ -6,8 +6,12 @@
     --page: #fff;
 }
 @font-face {
-    font-family: 'Protobesh AF';
+    font-family: 'Protobesh';
     src: url(ProtobeshAF.otf);
+}
+@font-face {
+    font-family: 'Kitisakkullian';
+    src: url(KitisakkullianAF_v1.2.otf);
 }
 @font-face {
     font-family: 'AurebeshTypewriter';
@@ -21,19 +25,54 @@ body {
     margin: 3em auto;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'AurebeshTypewriter';
     text-align: center;
-    margin: 24pt auto;
+    margin: 0 auto;
     padding: 10px;
     width: 400pt;
+    background: var(--page);
+    position: relative;
+}
+a {
+    color: black;
     text-decoration: underline;
     text-decoration-skip: none;
-    background: var(--page);
+}
+a:active {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    text-decoration-skip: none;
+}
+a:visited {
+    color: black;
+    text-decoration: dashed;
+    text-decoration-skip: none;
+}
+
+h1 {
     font-size: 18pt;
     filter: blur(.5px) contrast(75);
     text-transform: uppercase;
-    position: relative;
+    /* text-decoration: underline; */
+}
+h2 {
+    font-size: 14pt;
+    /* text-transform: uppercase; */
+    filter: blur(.2px) contrast(50);
+}
+h3, h4 {
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
+    filter: blur(.05px) contrast(5);
+}
+h3::before {
+    font-family: 'AurebeshTypewriter';
+    content: 'on or about ';
+}
+h4 {
+    font-size: 8pt;
 }
 /* h1:hover, h1:active {
     font-family: 'Courier New', Courier, monospace;
@@ -41,20 +80,37 @@ h1 {
     letter-spacing: 1.75pt;
 } */
 
-p {
+p, ul {
     margin: 24pt auto;
     padding: 2pt;
     width: 400pt;
     font-size: 14pt;
-    font-family: 'Protobesh AF';
-    letter-spacing: -1pt;
     background: var(--page);
     /* filter: blur(.5px) contrast(30); */
     /* text-align: justify; */
     position: relative;
-    filter: blur(.3px) contrast(20);
     /* display: inline-block; */
     z-index: 0;
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    list-style-type: none;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.protobesh {
+    filter: blur(.3px) contrast(20);
+    font-family: 'Protobesh';
+    letter-spacing: -1pt;
+}
+.kitisakkullian {
+    filter: blur(.1px) contrast(10);
+    /* font-size: 14pt; */
+    font-family: 'Kitisakkullian';
+    /* letter-spacing: -1pt; */
 }
 
 /* p:active, p:hover {
@@ -76,12 +132,13 @@ p span, h1 span {
     z-index: 0;
     bottom: 0pt;
     left: 10pt;
-    width: 350pt;
+    width: fit-content;
+    max-width: 300pt;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     /* opacity: 0; */
     transform-origin: center center center;
-    transform: rotate(.5deg) skewX(-2deg);
+    transform: skewX(-1deg);
     filter: brightness(100);
 }
 
