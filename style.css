@@ -54,6 +54,7 @@ p {
     position: relative;
     filter: blur(.3px) contrast(20);
     /* display: inline-block; */
+    z-index: 0;
 }
 
 /* p:active, p:hover {
@@ -70,18 +71,24 @@ p span, h1 span {
     padding: 5pt;
     margin: 5pt;
     border-radius: 6px;    
+    border: 2pt solid currentColor;    
     position: absolute;
     z-index: 0;
-    top: -10pt;
-    right: 420pt;
-    width: 250pt;
+    bottom: 0pt;
+    left: 10pt;
+    width: 350pt;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    opacity: 0;
+    /* opacity: 0; */
+    transform-origin: center center center;
     transform: skewX(-2deg);
+}
+
+p:hover {
+    z-index: 100;
 }
 
 p:hover span, h1 span {
     visibility: visible;
-    opacity: 100;
+    /* opacity: 100; */
 }
