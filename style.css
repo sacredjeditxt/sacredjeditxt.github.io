@@ -81,7 +81,8 @@ p span, h1 span {
     font-weight: bold;
     /* opacity: 0; */
     transform-origin: center center center;
-    transform: skewX(-2deg);
+    transform: rotate(.5deg) skewX(-2deg);
+    filter: brightness(100);
 }
 
 p:hover {
