@@ -17,6 +17,16 @@
     font-family: 'AurebeshTypewriter';
     src: url(AurebeshTypewriter-Regular.otf);
 }
+@font-face {
+    font-family: 'McQ Mirror';
+    font-variant-alternates: styleset(4);
+    src: url(McQuarrieAF.otf);
+}
+@font-feature-values "McQ Mirror" {
+    @styleset {
+        automirror: 2;
+    }
+}
 
 body {
     background-color: var(--page);
@@ -31,7 +41,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     padding: 10px;
     width: 400pt;
-    background: var(--page);
+    /* background: var(--page); */
     position: relative;
 }
 a {
@@ -80,7 +90,7 @@ p, ul {
     padding: 2pt;
     width: 400pt;
     font-size: 14pt;
-    background: var(--page);
+    /* background: var(--page); */
     /* filter: blur(.5px) contrast(30); */
     /* text-align: justify; */
     position: relative;
@@ -107,15 +117,28 @@ ul {
     font-family: 'Kitisakkullian';
     /* letter-spacing: -1pt; */
 }
+.mcq {
+    /* filter: blur(.1px) contrast(10); */
+    font-size: 18.5pt;
+    /* text-align: center; */
+    font-family: 'McQ Mirror';
+    line-height: 1em;
+    font-variant-alternates: styleset(automirror);
+    /* color: #880000; */
+    /* background-color: white; */
+    /* filter: blur(.05px) contrast(5); */
 
-p span, h1 span {
+    /* letter-spacing: -1pt; */
+}
+
+p span {
     visibility: hidden;
     background-color: white;
     color: black;
     padding: 5pt;
     margin: 5pt;
     border-radius: 6px;    
-    border: 2pt solid currentColor;    
+    border: 2pt solid currentColor;
     position: absolute;
     z-index: 0;
     bottom: 0pt;
@@ -124,17 +147,19 @@ p span, h1 span {
     max-width: 300pt;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 14pt;
     /* opacity: 0; */
     transform-origin: center center center;
     transform: skewX(-1deg);
     /* filter: brightness(100); */
+    user-select: none;
 }
 
 p:hover {
     z-index: 100;
 }
 
-p:hover span, h1 span {
+p:hover span {
     visibility: visible;
     /* opacity: 100; */
 }
