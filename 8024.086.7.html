@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sacredjedi.txt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="ProtobeshAF.otf">
+</head>
+<body>
+    <h4>
+        <a href="8024.085.4.html">8024.085.4</a> |
+        <a href="index.html">#</a>
+    </h4>
+    <h1><a href="#">Visitations of the Dead</a></h1>
+    <h2>Taken from the Holocron of Master Byron Sunkeeper</h2>
+    <h3>8024.086.7</h3>
+    <p>If I am one with the Force in life,
+        <br>Shall I not be one likewise in death?
+        <br>What then is death to a Jedi?
+        <br>Lo: But the changing of the tide.</p>
+    <p>Yet if I despise oneness in life,
+        <br>Shall I then accept it in death?
+        <br>What then is death to the Sith?
+        <br>Lo: Annihilation and ruin.</p>
+    <p>The dark side of the Force is founded on a conception of the self as a thing separate from the Force. To "master" the dark side is to hold oneself above and beyond the very concept of interwoven life.</p>
+    <p>Adherents to this paradigm (for it need not be a codified philosophy) ultimately view death as a conclusion or termination of the self, rather than a continuation or transformation of the interconnected web of the living.</p>
+    <p>All beings live on after death in the Force of Others, whether in the cosmic metaphysical form of a so-called Force ghost, or simply in the ripples of our lives' effects on the lives of others, and of all life that follows.</p>
+    <p>But to the dark side such life, being absent of control, is not life at all.</p>
+    <p>The pursuit of the dark side is ultimately motivated by a fear of endings. While there may be other enemies of power and those who crave it, none is greater than the inevitability of resolution, and of change.</p>
+    <p>Thence springs the seemingly relentless search for immortality by any mean necessary which we witness in those Jedi who have fallen from the light.</p>
+    <p>Yet, in refusing to die, in placing their will above the will of others and even the will of the Force, they subject themselves to a life of misery, surrounded by the Force, yet taking no part in the fruits thereof.</p>
+    <p>They transmute the energy of life itself into a mere tool or resource, to be manipulated, spent, exchanged, and ruined for personal gain.</p>
+    <p>But their curse is twofold: Not only do they live a life of internalized self-exile; they also meet death utterly, even intentionally, unprepared.</p>
+    <script> 
+        let paragraphs = document.getElementsByTagName('p');
+        for (let p = 0; p < paragraphs.length; p++) {
+                let text = paragraphs[p].innerHTML;
+                paragraphs[p].innerHTML = `${text}<span aria-hidden="true">${text}</span>`;
+                paragraphs[p].className = `protobesh`;
+                // paragraphs[p].classList.add('protobesh');
+        }
+    </script> 
+</body>
+</html>
