@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sacredjedi.txt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="ProtobeshAF.otf">
+</head>
+<body>
+    <h4>
+        <a href="8024.087.7.html">8024.087.7</a> |
+        <a href="index.html">#</a>
+    </h4>
+    <h1><a href="#">Attachment</a></h1>
+    <h2>Taken from Aionomicum 2:425</h2>
+    <h3>8024.088.5</h3>
+    <p>Jedi are not spared those challenges which are attendant to the lives of all sentient beings, but through trust in the Force their effects may pass over them.</p>
+    <p>Jedi instead are spared the phantom pains of fear, longing, and grief. Attachment is the source of these pains. When one is free of attachment to life, to belongings, and to comfort, they need not anymore have greif, want, or fear.</p>
+    <p>For longing is merely attachment to what one has not; greif to what one has no longer.</p>
+    <p>Fear is a path to the dark side. Fear leads to anger; anger leads to hate; hate leads to suffering.</p>
+    <p>The dark side falsely promises that fear, longing, and grief may be overcome by the acquisition, consolidation, and exercize thereof.</p>
+    <p>It is the promise and the lie of permanance; not a negation of fear, but a succumbing unto it. Not a fulfillment of longing, but a deepening thereof. Not an absolution of grief, but worship thereof.</p>
+    <p>This path is alluring to those who seek that ease which accompanies power, but who are not mindful of the consuming turmoil which accompanies greed.</p>
+    <script> 
+        let paragraphs = document.getElementsByTagName('p');
+        for (let p = 0; p < paragraphs.length; p++) {
+                let text = paragraphs[p].innerHTML;
+                paragraphs[p].innerHTML = `${text}<span aria-hidden="true">${text}</span>`;
+                paragraphs[p].className = `protobesh`;
+                // paragraphs[p].classList.add('protobesh');
+        }
+    </script> 
+</body>
+</html>
