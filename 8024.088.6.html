@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sacredjedi.txt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="ProtobeshAF.otf">
+</head>
+<body>
+    <h4>
+        <a href="8024.088.5.html">8024.088.5</a>
+        |
+        <a href="index.html">#</a>
+    </h4>
+    <h1><a href="#">Excerpts</a></h1>
+    <h2>Taken from JT03</h2>
+    <h3>8024.088.6</h3>
+    <p>The Force is the Light, the Force is the Dark. Jedi choose the Light for All it Reveals.</p>
+    <p>...</p>
+    <p>Darkness, untouched by Light, demands Isolation, Absolution, Perfection: An Intractable Multitude of Loneliness. A Light shone through the Dark reveals its Workings, how Troubled, how Misguided, how Doomed to Succeed.</p>
+    <p>...</p>
+    <p>The Way of the Jedi is a Path Chosen, not a Destiny Appointed. Let not the Code of this Order overtake its Ideals.</p>
+    <script> 
+        let paragraphs = document.getElementsByTagName('p');
+        for (let p = 0; p < paragraphs.length; p++) {
+                let text = paragraphs[p].innerHTML;
+                paragraphs[p].innerHTML = `${text}<span aria-hidden="true">${text}</span>`;
+                paragraphs[p].className = `protobesh`;
+                // paragraphs[p].classList.add('protobesh');
+        }
+    </script> 
+</body>
+</html>
