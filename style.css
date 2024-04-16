@@ -18,6 +18,10 @@
     src: url(AurebeshTypewriter-Regular.otf);
 }
 @font-face {
+    font-family: 'Kittat';
+    src: url(SithAF.otf);
+}
+@font-face {
     font-family: 'McQ Mirror';
     font-variant-alternates: styleset(4);
     src: url(McQuarrieAF.otf);
@@ -115,6 +119,12 @@ ul {
     /* filter: blur(.1px) contrast(10); */
     /* font-size: 14pt; */
     font-family: 'Kitisakkullian';
+    /* letter-spacing: -1pt; */
+}
+.kittat {
+    /* filter: blur(.1px) contrast(10); */
+    font-size: 20pt;
+    font-family: 'kittat';
     /* letter-spacing: -1pt; */
 }
 .mcq {
