@@ -125,6 +125,7 @@ ul {
     /* filter: blur(.1px) contrast(10); */
     font-size: 20pt;
     font-family: 'kittat';
+    text-align: center;
     /* letter-spacing: -1pt; */
 }
 .mcq {
