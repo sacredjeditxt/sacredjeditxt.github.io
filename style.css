@@ -1,6 +1,7 @@
 :root {
     --dark: #000;
     --light: #ffc71f;
+    --red: #bf3030;
     --lightouter: #ffc000;
     --null: #00000000;
     --page: #fff;
@@ -110,6 +111,11 @@ ul {
     /* margin: 0; */
 }
 
+.aurebesh {
+    /* filter: blur(.3px) contrast(20); */
+    font-family: 'AurebeshTypewriter';
+    /* letter-spacing: -1pt; */
+}
 .protobesh {
     /* filter: blur(.3px) contrast(20); */
     font-family: 'Protobesh';
@@ -121,9 +127,13 @@ ul {
     font-family: 'Kitisakkullian';
     /* letter-spacing: -1pt; */
 }
+.kitisakkullian strong, .kitisakkullian u {
+    color: var(--red);
+    font-weight: unset;
+}
 .kittat {
     /* filter: blur(.1px) contrast(10); */
-    font-size: 20pt;
+    font-size: 24pt;
     font-family: 'kittat';
     text-align: center;
     /* letter-spacing: -1pt; */
